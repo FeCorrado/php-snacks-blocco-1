@@ -39,5 +39,11 @@ $posts = [
         ]
     ],
 ];
-?>
-?>
+
+foreach ($posts as $key => $post) {
+    echo "<h3> $key </h3>";
+    foreach ($post as $post) {
+        echo "<h5>" . $post["title"] . "</h5>" . "<h5>" . $post["author"] . "</h5>" . "<h5>" . $post["text"] . "</h5>";
+        echo "<div>---------------</div>";
+    };
+}
